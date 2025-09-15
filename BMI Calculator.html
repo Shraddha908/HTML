@@ -1,0 +1,33 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment </title>
+</head>
+<body>
+   <input type="number" placeholder="height" id="h"><br>
+   <input type="number" placeholder="weight" id="w"><br>
+   <button onclick="getBMI()">Get BMI</button> 
+</body>
+<script>
+    let height = document.getElementById("h")
+    let weight = document.getElementById("w")
+
+    function getBMI(){
+       let BMI = w / (h*h)
+     
+       if(BMI <= 18.4){
+        alert("underweight")
+       }else if(BMI >= 18.5 && BMI <= 24.9){
+        alert("normal weight")
+       }else if(BMI >= 25 && BMI <= 29.9){
+        alert("over weight")
+       }else if(BMI>=  30){
+        alert("obese")
+       }else{
+        alert("Machine is not working")
+       }
+       
+    }
+</script>
+</html>
